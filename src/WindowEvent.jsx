@@ -24,11 +24,7 @@ const WindowEvent = () => {
     return () => window.removeEventListener("dblclick", doubleClick);
   });
 
-  return (
-    <div className="daddy">
-      <p>Window Event is now Active - You may now double click</p>
-    </div>
-  );
+  return <div className="daddy">THE WINDOW EVENT IS NOW ACTIVE !</div>;
 };
 
 export default WindowEvent;
