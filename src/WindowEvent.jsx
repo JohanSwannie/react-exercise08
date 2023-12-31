@@ -4,9 +4,10 @@ const WindowEvent = () => {
   const [counter, setCounter] = useState(0);
 
   const addPElement = () => {
-    if (counter > 5) {
-      const deleteThem = document.querySelectorAll("children");
+    if (counter > 7) {
+      const deleteThem = document.querySelectorAll(".children");
       deleteThem.forEach((kid) => kid.remove());
+      setCounter(0);
     } else {
       const daddy = document.querySelector(".daddy");
       const child = document.createElement("p");
