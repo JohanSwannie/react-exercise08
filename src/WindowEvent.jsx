@@ -26,9 +26,9 @@ const WindowEvent = () => {
   };
 
   useEffect(() => {
-    const clicked = () => addPElement();
-    window.addEventListener("dblclick", clicked);
-    return () => window.removeEventListener("dblclick", clicked);
+    const doubleClicked = () => addPElement();
+    window.addEventListener("dblclick", doubleClicked);
+    return () => window.removeEventListener("dblclick", doubleClicked);
   });
 
   return (
